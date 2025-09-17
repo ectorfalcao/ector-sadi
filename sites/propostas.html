@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRTB Nacional - Propostas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" type="image/png" href="images/ico.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+  <img src="images/Brasileiro28.png" alt="Logo do Partido" style="height:40px; width:auto; max-width:180px;">
+        <span style="color:#FFD400;"></span>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link">Quem Somos</a></li>
+          <li class="nav-item"><a href="historia.html" class="nav-link">Nossa História</a></li>
+          <li class="nav-item"><a href="propostas.html" class="nav-link active">Propostas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-center text-white d-flex align-items-center" 
+  style="min-height: 50vh; background: linear-gradient(rgba(0,48,135,0.8), rgba(0,151,57,0.8)), url('images/hero-propostas.jpg') center/cover no-repeat;">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-5 fw-bold mb-3">Nossas Propostas</h1>
+      <p class="lead">Um Brasil mais justo começa com ideias concretas e ação responsável.</p>
+    </div>
+  </header>
+
+  <!-- PROPOSTAS -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 p-4 shadow-sm">
+          <h5 class="fw-bold">Educação</h5>
+          <p>Investir em escolas de qualidade, professores valorizados e acesso democrático ao conhecimento.</p>
+          <img src="images/prop-educacao.png" alt="Educação" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 p-4 shadow-sm">
+          <h5 class="fw-bold">Saúde</h5>
+          <p>Garantir acesso universal ao sistema de saúde, com modernização e descentralização dos serviços.</p>
+          <img src="images/prop-saude.png" alt="Saúde" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 p-4 shadow-sm">
+          <h5 class="fw-bold">Economia</h5>
+          <p>Estimular o empreendedorismo, reduzir a burocracia e fortalecer a geração de empregos.</p>
+          <img src="images/prop-economia.png" alt="Economia" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <img src="images/Brasileiro28.png" alt="Logo do Partido" style="height:40px; width:auto; max-width:180px;">
+          <p class="mt-2">Trabalhando por um Brasil mais justo, próspero e democrático.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h6>Institucional</h6>
+          <ul class="list-unstyled">
+            <li><a href="sobre.html">Quem Somos</a></li>
+            <li><a href="historia.html">Nossa História</a></li>
+            <li><a href="propostas.html">Propostas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h6>Contato</h6>
+          <p>📍 SHCS CR 516, Bloco B, nº 66, Asa Sul - Brasília/DF</p>
+          <p>✉️ <a href="mailto:diretorionacionalprtb@gmail.com">diretorionacionalprtb@gmail.com</a></p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="col-md-3">
+          <h6>Junte-se</h6>
+          <p>Faça parte do futuro do Brasil.</p>
+          <a href="sobre.html" class="btn">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <small>&copy; 2025 PRTB - Todos os direitos reservados</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
