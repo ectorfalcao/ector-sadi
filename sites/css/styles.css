@@ -1,0 +1,214 @@
+/* ===== FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== FAIXA SUPERIOR ===== */
+.top-bar {
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    #009739 0%,   #009739 33.3%,   /* Verde */
+    #FFD400 33.3%, #FFD400 66.6%,  /* Amarelo */
+    #003087 66.6%, #003087 100%    /* Azul */  
+    );
+}
+
+/* ===== FOOTER (faixas sólidas) ===== */
+.footer {
+  background: repeating-linear-gradient(
+    90deg,
+    #003087 0%,   #003087 33.3%,   /* Azul */
+    #FFD400 33.3%, #FFD400 66.6%,  /* Amarelo */
+    #009739 66.6%, #009739 100%    /* Verde */
+  );
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+
+/* ===== NAVBAR ESTILO ===== */
+.custom-navbar {
+  background: #003087; /* Azul sólido */
+  padding: 0.7rem 0;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+}
+.brand-logo {
+  display: block;
+  height: 40px !important;
+  width: auto !important;
+  max-width: 180px !important;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+  margin: 0 12px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.custom-navbar .nav-link:hover {
+  color: #FFD400 !important;
+}
+.custom-navbar .nav-link.active {
+  background: #FFD400;
+  color: #003087 !important;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+
+/* Botão destaque */
+.btn-join {
+  background: #FFD400;
+  color: #003087;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.btn-join:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* ===== HERO ===== */
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== SEÇÕES ===== */
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #003087;
+}
+
+section p {
+  color: #444;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background-color: transparent !important;
+  background-image: url('../images/Fundo28.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #003087;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(90deg, #009739, #003087);
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.footer h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFD400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #FFD400;
+}
+
+.footer img {
+  max-height: 50px;
+}
+
+.footer .btn {
+  background: #FFD400;
+  color: #003087;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 6px 16px;
+  transition: all 0.25s ease;
+}
+
+.footer .btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.9);
+}
+
+.footer small {
+  color: #e6e6e6;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .brand-logo {
+    max-height: 40px;
+    max-width: 120px;
+  }
+  .custom-navbar .nav-link {
+    margin: 6px 0;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-3 {
+    margin-bottom: 1.5rem;
+  }
+}
